@@ -3,113 +3,119 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Skarpetkowe urodziny – urodziny z książką we Wrocławiu</title>
-<meta name="description" content="Dwugodzinne urodziny dla dzieci 5–8 lat w świecie książki „Niesamowite przygody dziesięciu skarpetek”. Czytanie, gry, śledztwo i warsztat skarpetkowego przyjaciela. Wrocław.">
-<meta property="og:title" content="Skarpetkowe urodziny – urodziny z książką we Wrocławiu">
-<meta property="og:description" content="Czytanie, gry, śledztwo i własny skarpetkowy przyjaciel dla każdego gościa. Dla dzieci 5–8 lat, do 12 osób, 2 godziny.">
+<title>Autorskie urodziny dla dzieci we Wrocławiu – Darya Shut</title>
+<meta name="description" content="Autorskie urodziny dla dzieci 5–8 lat wokół ulubionego tematu dziecka: własna historia, gry, warsztat i zagadki. Gotowy scenariusz: Skarpetkowe urodziny. Wrocław.">
+<meta property="og:title" content="Autorskie urodziny dla dzieci – Darya Shut, Wrocław">
+<meta property="og:description" content="Urodziny wokół ulubionego tematu dziecka. Pierwszy gotowy scenariusz: Skarpetkowe urodziny – śledztwo, warsztat i parada skarpetek.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://adarka-shut.github.io/skarpetkowe-urodziny/">
 <meta property="og:image" content="https://adarka-shut.github.io/skarpetkowe-urodziny/og.png">
 <meta property="og:locale" content="pl_PL">
-<meta property="og:url" content="https://adarka-shut.github.io/skarpetkowe-urodziny/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Figtree:wght@400;600;700&display=swap">
 <style>
 :root{
-  --ink:#1E2B45; --muted:#5B6478; --paper:#FFFBF3; --white:#FFFFFF;
-  --red:#C43D31; --teal:#1F7A72; --teal-soft:#DDEFEC; --yellow:#F2B33D; --pink:#E8A0A8; --line:#D9D3C4;
+  --ink:#1F1D36; --muted:#555372; --bg:#FFFFFF; --tint:#F1F3FF;
+  --violet:#5B4BD6; --violet-dark:#4636B8; --orange:#FF7A45; --mint:#2BB59A; --yellow:#FFC93C; --pink:#FF8FB1;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:'Nunito',system-ui,sans-serif;font-size:18px;line-height:1.6}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Figtree',system-ui,sans-serif;font-size:18px;line-height:1.6}
 img,svg{max-width:100%;height:auto}
-a{color:var(--teal)}
-a:hover{color:#165c56}
-h1,h2,h3{font-family:'Baloo 2',system-ui,sans-serif;line-height:1.05;margin:0}
-h2{font-size:clamp(34px,5vw,48px);font-weight:800}
-h3{font-size:24px;font-weight:600}
+a{color:var(--violet)}
+a:hover{color:var(--violet-dark)}
+h1,h2,h3{font-family:'Fredoka',system-ui,sans-serif;font-weight:600;line-height:1.08;margin:0}
+h2{font-size:clamp(32px,4.6vw,46px)}
+h3{font-size:23px}
 p{margin:0}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{display:inline-block;background:var(--red);color:var(--white);font-weight:700;font-size:15px;letter-spacing:1.2px;text-transform:uppercase;padding:6px 16px;border-radius:999px}
-.lead{font-size:20px;max-width:620px}
-.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
-.chips li{border:2.5px solid var(--ink);border-radius:999px;padding:5px 16px;font-weight:700;font-size:16px;background:var(--white)}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 28px;border-radius:999px;background:var(--ink);color:var(--white);font-weight:700;text-decoration:none;font-size:18px;border:2.5px solid var(--ink)}
-.btn:hover{background:#2c3d60;color:var(--white)}
-.btn.ghost{background:transparent;color:var(--ink)}
-.btn.ghost:hover{background:var(--white);color:var(--ink)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:80px 0}
+.tint{background:var(--tint)}
+.kicker{font-weight:700;font-size:15px;letter-spacing:1.4px;text-transform:uppercase;color:var(--violet)}
+.lead{font-size:20px;color:var(--muted);max-width:640px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 28px;border-radius:16px;background:var(--violet);color:#fff;font-weight:700;text-decoration:none;font-size:18px}
+.btn:hover{background:var(--violet-dark);color:#fff}
+.btn.soft{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px #D9DCF5}
+.btn.soft:hover{box-shadow:inset 0 0 0 2px var(--violet);color:var(--ink)}
 .actions{display:flex;flex-wrap:wrap;gap:12px}
+.card{background:#fff;border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(45,40,110,.08)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 
-/* nav */
-header.top{padding:18px 0}
+/* header */
+header.top{padding:18px 0;border-bottom:1px solid #ECEEFA}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:var(--ink);text-decoration:none}
-nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:16px}
-nav a:hover{color:var(--teal)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand b{font-family:'Fredoka',sans-serif;font-weight:600;font-size:22px}
+.brand span{font-size:14px;color:var(--muted);display:block;line-height:1.2}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:16px}
+nav a:hover{color:var(--violet)}
 
 /* hero */
-.hero{padding:24px 0 72px}
-.hero .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:32px}
-.hero-text{flex:1 1 440px;display:flex;flex-direction:column;gap:22px;min-width:0}
-.hero h1{font-size:clamp(52px,9vw,96px);font-weight:800;line-height:.9}
-.hero-art{flex:1 1 380px;min-width:0}
+.hero{padding:40px 0 80px;text-align:center}
+.hero .art{max-width:860px;margin:0 auto 18px}
+.hero h1{font-size:clamp(42px,7vw,76px);max-width:900px;margin:0 auto}
+.hero h1 em{font-style:normal;color:var(--violet)}
+.hero .lead{margin:22px auto 0}
+.hero .actions{justify-content:center;margin-top:30px}
+.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none;padding:0;margin:28px 0 0}
+.facts li{background:var(--tint);border-radius:999px;padding:6px 16px;font-weight:600;font-size:16px}
 
-/* program */
-.program{background:var(--white);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
-.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.steps li{border:2.5px solid var(--ink);border-radius:20px;padding:22px;background:var(--paper);display:flex;flex-direction:column;gap:8px}
-.steps .time{font-weight:700;font-size:15px;color:var(--teal)}
-.steps p{font-size:17px}
-.note{margin-top:24px;color:var(--muted);font-size:16px}
+/* how */
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:40px;list-style:none;padding:0}
+.how li{display:flex;flex-direction:column;gap:10px}
+.num{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Fredoka',sans-serif;font-weight:700;font-size:24px;color:#fff}
 
-/* two columns */
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:36px}
-.card{border-radius:20px;padding:28px;border:2.5px solid var(--ink);background:var(--white)}
-.card.teal{background:var(--teal-soft)}
-.card ul{margin:14px 0 0;padding-left:22px}
-.card li{margin:6px 0}
+/* scenario */
+.scenario-head{display:flex;flex-wrap:wrap;gap:36px;align-items:center}
+.scenario-head .txt{flex:1 1 440px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.scenario-head .pic{flex:0 1 320px;margin:0 auto}
+.badge{align-self:flex-start;background:var(--yellow);color:var(--ink);border-radius:10px;padding:4px 12px;font-weight:700;font-size:15px}
+.timeline{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.timeline li{display:flex;gap:16px;align-items:flex-start}
+.timeline .time{flex:0 0 auto;min-width:96px;background:var(--tint);border-radius:12px;padding:6px 10px;font-weight:700;font-size:15px;text-align:center;color:var(--violet-dark)}
+.timeline h3{font-size:21px;margin-bottom:4px}
+.timeline p{font-size:17px;color:var(--muted)}
+
+/* who does what */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:36px}
+.cols ul{margin:14px 0 0;padding-left:20px}
+.cols li{margin:6px 0}
 
 /* price */
-.price{display:flex;flex-wrap:wrap;gap:24px;align-items:stretch;margin-top:36px}
-.price .main{flex:2 1 380px;background:var(--ink);color:var(--white);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px}
-.price .main .amount{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:64px;line-height:1}
-.price .main ul{margin:0;padding-left:22px}
-.price .extras{flex:1 1 280px;display:flex;flex-direction:column;gap:14px}
-.extra{border:2.5px solid var(--ink);border-radius:20px;padding:20px;background:var(--white)}
-.extra strong{display:block;font-size:18px}
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:36px}
+.price-main{background:var(--violet);color:#fff}
+.price-main .amount{font-family:'Fredoka',sans-serif;font-weight:700;font-size:60px;line-height:1;margin:10px 0 14px}
+.price-main ul{margin:0;padding-left:20px}
+.price-main .small{margin-top:16px;font-size:16px;opacity:.92}
+.amount.dark{font-family:'Fredoka',sans-serif;font-weight:700;font-size:34px;line-height:1.1;margin:10px 0 14px;color:var(--violet)}
 
 /* about */
-.about .wrap{display:flex;flex-wrap:wrap;gap:36px;align-items:center}
-.about-art{flex:0 1 260px}
-.about-text{flex:1 1 420px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.about{display:flex;flex-wrap:wrap;gap:36px;align-items:center}
+.about .pic{flex:0 1 240px;margin:0 auto}
+.about .txt{flex:1 1 420px;display:flex;flex-direction:column;gap:14px;min-width:0}
 
 /* faq */
-.faq{background:var(--white);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
 .faq-list{margin-top:32px;display:flex;flex-direction:column;gap:12px;max-width:820px}
-details{border:2.5px solid var(--ink);border-radius:16px;background:var(--paper)}
-summary{cursor:pointer;padding:16px 20px;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:44px;align-items:center}
+details{background:#fff;border-radius:18px;box-shadow:0 6px 20px rgba(45,40,110,.06)}
+summary{cursor:pointer;padding:18px 22px;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-family:'Baloo 2',sans-serif;font-size:28px;line-height:1;color:var(--red)}
-details[open] summary::after{content:"–"}
-details p{padding:0 20px 18px;font-size:17px}
+summary::after{content:"";flex:0 0 12px;height:12px;border-right:3px solid var(--violet);border-bottom:3px solid var(--violet);transform:rotate(45deg);margin-top:-6px}
+details[open] summary::after{transform:rotate(-135deg);margin-top:6px}
+details p{padding:0 22px 20px;font-size:17px;color:var(--muted)}
 
 /* contact */
 .contact{text-align:center}
-.contact .wrap{display:flex;flex-direction:column;align-items:center;gap:20px}
+.contact .wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
 .contact .actions{justify-content:center}
 .consent{max-width:640px;font-size:14px;color:var(--muted)}
-footer{padding:32px 0 48px;color:var(--muted);font-size:15px;text-align:center}
-footer p+p{margin-top:6px}
-
-:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;border-top:1px solid #ECEEFA}
 @media (max-width:640px){
   body{font-size:17px}
-  section{padding:56px 0}
-  nav ul{gap:14px}
-  .price .main .amount{font-size:52px}
+  section{padding:60px 0}
+  .timeline .time{min-width:84px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -119,12 +125,12 @@ footer p+p{margin-top:6px}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#">
-      <svg width="28" height="35" viewBox="0 0 64 80" aria-hidden="true"><path d="M14 14 H42 V44 L56 52 C64 57 63 72 52 74 H28 C17 74 12 67 13 57 Z" fill="#C43D31" stroke="#1E2B45" stroke-width="4" stroke-linejoin="round"/><rect x="11" y="6" width="34" height="12" rx="3" fill="#FFFBF3" stroke="#1E2B45" stroke-width="4"/></svg>
-      Skarpetkowe urodziny
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#5B4BD6"/><path d="M15 9 H25 V22 L31 25.5 C34 27.5 33 33 28.5 33 H20 C15.5 33 13.5 30 14 26 Z" fill="#FFC93C"/><rect x="14" y="7" width="12" height="5" rx="2" fill="#FF7A45"/></svg>
+      <div><b>Darya Shut</b><span>autorskie urodziny dla dzieci</span></div>
     </a>
     <nav aria-label="Menu">
       <ul>
-        <li><a href="#program">Program</a></li>
+        <li><a href="#skarpetkowe">Skarpetkowe urodziny</a></li>
         <li><a href="#cena">Cena</a></li>
         <li><a href="#pytania">Pytania</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
@@ -136,63 +142,72 @@ footer p+p{margin-top:6px}
 <main>
 <section class="hero">
   <div class="wrap">
-    <div class="hero-text">
-      <span class="eyebrow" style="align-self:flex-start">Urodziny z książką · Wrocław</span>
-      <h1>Skarpetkowe urodziny</h1>
-      <p class="lead">Dwie godziny w świecie książki „Niesamowite przygody dziesięciu skarpetek” Justyny Bednarek. Czytamy, gramy, prowadzimy śledztwo, a każdy gość robi własnego skarpetkowego przyjaciela i zabiera go do domu.</p>
-      <ul class="chips" aria-label="W skrócie">
-        <li>dzieci 5–8 lat</li>
-        <li>do 12 osób</li>
-        <li>2 godziny</li>
-        <li>u Was w domu lub w sali</li>
-      </ul>
-      <div class="actions">
-        <a class="btn" href="#kontakt">Zapytaj o termin</a>
-        <a class="btn ghost" href="#program">Zobacz program</a>
-      </div>
-    </div>
-    <div class="hero-art">
-      <svg viewBox="0 0 580 600" role="img" aria-label="Pralka, z której po kropkowanej linii wylatują kolorowe skarpetki">
-        <ellipse cx="210" cy="578" rx="170" ry="14" fill="#E9E2D3"/>
-        <path d="M262 380 C 340 310 250 230 330 180 S 460 130 520 50" fill="none" stroke="#C43D31" stroke-width="5" stroke-dasharray="12 12" stroke-linecap="round"/>
-        <rect x="70" y="270" width="280" height="300" rx="24" fill="#FFFFFF" stroke="#1E2B45" stroke-width="6"/>
-        <line x1="70" y1="332" x2="350" y2="332" stroke="#1E2B45" stroke-width="6"/>
-        <circle cx="108" cy="301" r="11" fill="#C43D31" stroke="#1E2B45" stroke-width="4"/>
-        <circle cx="142" cy="301" r="11" fill="#F2B33D" stroke="#1E2B45" stroke-width="4"/>
-        <rect x="238" y="290" width="82" height="22" rx="6" fill="#DDEFEC" stroke="#1E2B45" stroke-width="4"/>
-        <circle cx="210" cy="450" r="92" fill="#FFFBF3" stroke="#1E2B45" stroke-width="6"/>
-        <circle cx="210" cy="450" r="70" fill="#DDEFEC" stroke="#1F7A72" stroke-width="5"/>
-        <path d="M165 435 C 185 420 205 450 225 435 S 255 450 260 440" fill="none" stroke="#1F7A72" stroke-width="4" stroke-linecap="round"/>
-        <g transform="translate(176 410) scale(0.9) rotate(-35 32 40)"><path d="M14 14 H42 V44 L56 52 C64 57 63 72 52 74 H28 C17 74 12 67 13 57 Z" fill="#8A93A6" stroke="#1E2B45" stroke-width="3.5" stroke-linejoin="round"/><rect x="11" y="6" width="34" height="12" rx="3" fill="#FFFBF3" stroke="#1E2B45" stroke-width="3.5"/></g>
-        <g transform="translate(270 270) scale(1.05) rotate(-20 32 40)"><path d="M14 14 H42 V44 L56 52 C64 57 63 72 52 74 H28 C17 74 12 67 13 57 Z" fill="#F2B33D" stroke="#1E2B45" stroke-width="3.5" stroke-linejoin="round"/><rect x="11" y="6" width="34" height="12" rx="3" fill="#C43D31" stroke="#1E2B45" stroke-width="3.5"/><circle cx="27" cy="32" r="3" fill="#1E2B45"/><circle cx="34" cy="44" r="3" fill="#1E2B45"/><circle cx="27" cy="58" r="3" fill="#1E2B45"/></g>
-        <g transform="translate(300 130) scale(1.05) rotate(18 32 40)"><path d="M14 14 H42 V44 L56 52 C64 57 63 72 52 74 H28 C17 74 12 67 13 57 Z" fill="#1F7A72" stroke="#1E2B45" stroke-width="3.5" stroke-linejoin="round"/><rect x="11" y="6" width="34" height="12" rx="3" fill="#F2B33D" stroke="#1E2B45" stroke-width="3.5"/><line x1="14" y1="30" x2="42" y2="30" stroke="#FFFBF3" stroke-width="4"/><line x1="14" y1="42" x2="42" y2="42" stroke="#FFFBF3" stroke-width="4"/></g>
-        <g transform="translate(400 85) scale(1.05) rotate(-12 32 40)"><path d="M14 14 H42 V44 L56 52 C64 57 63 72 52 74 H28 C17 74 12 67 13 57 Z" fill="#E8A0A8" stroke="#1E2B45" stroke-width="3.5" stroke-linejoin="round"/><rect x="11" y="6" width="34" height="12" rx="3" fill="#FFFBF3" stroke="#1E2B45" stroke-width="3.5"/></g>
-        <g transform="translate(470 8) scale(1.2) rotate(22 32 40)"><path d="M14 14 H42 V44 L56 52 C64 57 63 72 52 74 H28 C17 74 12 67 13 57 Z" fill="#C43D31" stroke="#1E2B45" stroke-width="3" stroke-linejoin="round"/><rect x="11" y="6" width="34" height="12" rx="3" fill="#FFFBF3" stroke="#1E2B45" stroke-width="3"/><path d="M30 26 L32.6 32 L39 32.5 L34.1 36.7 L35.6 43 L30 39.6 L24.4 43 L25.9 36.7 L21 32.5 L27.4 32 Z" fill="#F2B33D"/></g>
-        <circle cx="420" cy="195" r="5" fill="#F2B33D"/>
-        <circle cx="250" cy="180" r="4" fill="#1F7A72"/>
-        <circle cx="535" cy="150" r="6" fill="#1F7A72"/>
+    <div class="art">
+      <svg viewBox="0 0 860 300" role="img" aria-label="Sznurek z kolorowymi skarpetkami na klamerkach i puste miejsce po zaginionej skarpetce ze znakiem zapytania">
+        <path d="M10 40 Q430 170 850 40" fill="none" stroke="#1F1D36" stroke-width="4" stroke-linecap="round"/>
+        <!-- socks: flat style, hung on pins -->
+        <g transform="translate(92 62) rotate(-8)"><rect x="-6" y="-14" width="12" height="26" rx="3" fill="#C9A27A"/><path d="M-22 6 H22 V70 L44 84 C58 93 54 120 34 122 H-4 C-22 122 -30 110 -28 92 Z" fill="#FF7A45"/><rect x="-24" y="0" width="48" height="16" rx="5" fill="#FFC93C"/><rect x="-22" y="34" width="44" height="8" fill="#fff" opacity=".85"/><rect x="-22" y="52" width="44" height="8" fill="#fff" opacity=".85"/></g>
+        <g transform="translate(250 104) rotate(-4)"><rect x="-6" y="-14" width="12" height="26" rx="3" fill="#C9A27A"/><path d="M-22 6 H22 V70 L44 84 C58 93 54 120 34 122 H-4 C-22 122 -30 110 -28 92 Z" fill="#2BB59A"/><rect x="-24" y="0" width="48" height="16" rx="5" fill="#fff"/><circle cx="-8" cy="40" r="5" fill="#fff"/><circle cx="8" cy="56" r="5" fill="#fff"/><circle cx="-6" cy="76" r="5" fill="#fff"/></g>
+        <g transform="translate(430 122)"><rect x="-6" y="-14" width="12" height="26" rx="3" fill="#C9A27A"/><path d="M-22 6 H22 V70 L44 84 C58 93 54 120 34 122 H-4 C-22 122 -30 110 -28 92 Z" fill="none" stroke="#5B4BD6" stroke-width="4" stroke-dasharray="10 9" stroke-linejoin="round"/><text x="6" y="82" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="700" font-size="56" fill="#5B4BD6">?</text></g>
+        <g transform="translate(610 104) rotate(5)"><rect x="-6" y="-14" width="12" height="26" rx="3" fill="#C9A27A"/><path d="M-22 6 H22 V70 L44 84 C58 93 54 120 34 122 H-4 C-22 122 -30 110 -28 92 Z" fill="#FF8FB1"/><rect x="-24" y="0" width="48" height="16" rx="5" fill="#5B4BD6"/><path d="M-22 30 L22 44 M-22 48 L22 62" stroke="#fff" stroke-width="6" opacity=".8"/></g>
+        <g transform="translate(768 62) rotate(9)"><rect x="-6" y="-14" width="12" height="26" rx="3" fill="#C9A27A"/><path d="M-22 6 H22 V70 L44 84 C58 93 54 120 34 122 H-4 C-22 122 -30 110 -28 92 Z" fill="#5B4BD6"/><rect x="-24" y="0" width="48" height="16" rx="5" fill="#2BB59A"/><circle cx="0" cy="48" r="9" fill="#FFC93C"/></g>
+        <!-- magnifying glass -->
+        <g transform="translate(470 230) rotate(-20)"><circle cx="0" cy="0" r="26" fill="#F1F3FF" stroke="#1F1D36" stroke-width="6"/><rect x="24" y="-6" width="40" height="12" rx="6" fill="#1F1D36"/></g>
+        <circle cx="180" cy="240" r="6" fill="#FFC93C"/><circle cx="700" cy="250" r="7" fill="#2BB59A"/><circle cx="330" cy="268" r="5" fill="#FF8FB1"/><circle cx="560" cy="28" r="5" fill="#FF7A45"/>
       </svg>
     </div>
+    <h1>Urodziny wokół <em>ulubionego tematu</em> dziecka</h1>
+    <p class="lead">Wymyślam autorskie urodziny dla dzieci: własną historię, gry, zagadki i warsztat wokół jednego tematu. Pierwszy gotowy scenariusz to Skarpetkowe urodziny z poszukiwaniem zaginionej skarpetki.</p>
+    <ul class="facts" aria-label="W skrócie">
+      <li>dzieci 5–8 lat</li><li>do 12 osób</li><li>2 godziny</li><li>Wrocław</li>
+    </ul>
+    <div class="actions">
+      <a class="btn" href="#kontakt">Zapytaj o termin</a>
+      <a class="btn soft" href="#skarpetkowe">Zobacz Skarpetkowe urodziny</a>
+    </div>
   </div>
 </section>
 
-<section class="program" id="program">
+<section class="tint">
   <div class="wrap">
-    <h2>Jak wygląda zabawa</h2>
-    <p class="lead" style="margin-top:14px">Czytanie przeplatamy ruchem, a solenizant ma swoją rolę w każdej części. Dzieci nie muszą znać książki wcześniej.</p>
-    <ol class="steps">
-      <li><span class="time">0:00–0:20</span><h3>Tunel pod pralką</h3><p>Goście wchodzą przez tunel, dostają plakietki i poznają Panią Hydraulik, która odkryła, dokąd znikają skarpetki.</p></li>
-      <li><span class="time">0:20–0:40</span><h3>Casting na gwiazdę</h3><p>Czytamy historię czarnej skarpetki, która została gwiazdą filmową. Solenizant jako reżyser prowadzi casting.</p></li>
-      <li><span class="time">0:40–1:00</span><h3>Skarpetkowy przyjaciel</h3><p>Każde dziecko robi własną skarpetkę z imieniem i charakterem. To prezent, który goście zabierają do domu.</p></li>
-      <li><span class="time">1:00–1:20</span><h3>Przerwa na tort</h3><p>Czas na poczęstunek i świeczki. W tym czasie ukrywam ślady do śledztwa.</p></li>
-      <li><span class="time">1:20–1:40</span><h3>Kto ukradł prezent?</h3><p>Drużyny detektywów szukają śladów łap i rozwiązują zagadkę. Na końcu znajdują prezent dla solenizanta.</p></li>
-      <li><span class="time">1:40–2:00</span><h3>Quiz i parada</h3><p>Krótki quiz drużynowy, parada skarpetek dla rodziców, wspólne zdjęcie i dyplomy dla wszystkich.</p></li>
+    <p class="kicker">Jak to działa</p>
+    <h2 style="margin-top:8px">Jeden temat, cała przygoda</h2>
+    <ol class="how">
+      <li class="card"><div class="num" style="background:var(--orange)">1</div><h3>Temat</h3><p>Zaczynam od tego, co dziecko lubi najbardziej. Na start mam gotowy temat skarpetek, a inne przygotowuję na zamówienie.</p></li>
+      <li class="card"><div class="num" style="background:var(--mint)">2</div><h3>Historia</h3><p>Do każdego tematu piszę własną opowieść. Dzieci nie tylko jej słuchają – stają się jej bohaterami.</p></li>
+      <li class="card"><div class="num" style="background:var(--violet)">3</div><h3>Zabawa</h3><p>Przez dwie godziny przeplatam opowieść z ruchem, zagadkami i warsztatem. Każdy gość wraca do domu z czymś, co zrobił sam.</p></li>
     </ol>
-    <p class="note">Plan dopasowuję do wieku i liczby dzieci. Jeśli zabawa się przedłuża, skracam quiz, a nie warsztat ani śledztwo.</p>
   </div>
 </section>
 
-<section>
+<section id="skarpetkowe">
+  <div class="wrap">
+    <div class="scenario-head">
+      <div class="txt">
+        <span class="badge">Gotowy scenariusz</span>
+        <h2>Skarpetkowe urodziny</h2>
+        <p class="lead">W domu solenizanta zaginęła skarpetka. Dzieci zostają skarpetkowymi detektywami: szukają śladów, rozwiązują zagadki, robią własnego skarpetkowego przyjaciela, a na koniec urządzają paradę skarpetek.</p>
+      </div>
+      <div class="pic">
+        <svg viewBox="0 0 320 300" role="img" aria-label="Skarpetkowa pacynka z lupą">
+          <circle cx="160" cy="150" r="140" fill="#F1F3FF"/>
+          <g transform="translate(150 70)"><path d="M-40 10 H40 V120 L80 146 C104 162 96 210 60 212 H-6 C-38 212 -52 192 -48 160 Z" fill="#FF8FB1"/><rect x="-44" y="0" width="88" height="28" rx="9" fill="#5B4BD6"/><circle cx="-16" cy="62" r="11" fill="#fff"/><circle cx="16" cy="62" r="11" fill="#fff"/><circle cx="-13" cy="64" r="5" fill="#1F1D36"/><circle cx="19" cy="64" r="5" fill="#1F1D36"/><path d="M-14 90 Q0 102 14 90" fill="none" stroke="#1F1D36" stroke-width="5" stroke-linecap="round"/></g>
+          <g transform="translate(232 196) rotate(-28)"><circle cx="0" cy="0" r="30" fill="#ffffffcc" stroke="#1F1D36" stroke-width="7"/><rect x="28" y="-7" width="44" height="14" rx="7" fill="#1F1D36"/></g>
+        </svg>
+      </div>
+    </div>
+    <ol class="timeline">
+      <li><span class="time">0:00–0:15</span><div><h3>Powitanie detektywów</h3><p>Plakietki dla gości i poznanie mojej pacynki-skarpetki, która zgubiła swoją parę.</p></div></li>
+      <li><span class="time">0:15–0:35</span><div><h3>Skarpetkowa opowieść</h3><p>Moja autorska historia z rekwizytami i zabawa ruchowa „Pary na czas”.</p></div></li>
+      <li><span class="time">0:35–0:55</span><div><h3>Skarpetkowy przyjaciel</h3><p>Każde dziecko robi własną skarpetkę z imieniem i charakterem i zabiera ją do domu.</p></div></li>
+      <li><span class="time">0:55–1:15</span><div><h3>Przerwa na tort</h3><p>Czas na poczęstunek i świeczki. W tym czasie ukrywam ślady do śledztwa.</p></div></li>
+      <li><span class="time">1:15–1:40</span><div><h3>Poszukiwanie zaginionej skarpetki</h3><p>Drużyny detektywów idą po śladach, rozwiązują zagadki, a na końcu znajdują prezent dla solenizanta.</p></div></li>
+      <li><span class="time">1:40–2:00</span><div><h3>Parada skarpetek</h3><p>Dzieci pokazują rodzicom swoje skarpetki, a potem jest wspólne zdjęcie i dyplomy dla wszystkich.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="tint">
   <div class="wrap">
     <h2>Kto co przygotowuje</h2>
     <div class="cols">
@@ -200,20 +215,19 @@ footer p+p{margin-top:6px}
         <h3>Ja przywożę</h3>
         <ul>
           <li>scenariusz i prowadzenie przez 2 godziny</li>
-          <li>kostium, pacynkę i tunel-pralkę</li>
+          <li>kostium, pacynkę i rekwizyty</li>
           <li>materiały do warsztatu dla każdego gościa</li>
-          <li>ślady do śledztwa, quiz i dyplomy</li>
+          <li>ślady i zagadki do śledztwa, dyplomy</li>
           <li>dojazd na 30–45 minut przed startem i sprzątanie po swoim stanowisku</li>
         </ul>
       </div>
-      <div class="card teal">
+      <div class="card">
         <h3>Państwo zapewniają</h3>
         <ul>
           <li>miejsce: pokój od ok. 15 m² ze stołem, a do śledztwa 2–3 pokoje lub większa sala</li>
           <li>poczęstunek, napoje i tort</li>
           <li>zaproszenie gości (gotowy tekst zaproszenia dostaną Państwo ode mnie)</li>
           <li>prezent do ukrycia w śledztwie</li>
-          <li>2–3 ciekawostki o solenizancie do quizu</li>
           <li>jedną osobę dorosłą w pokoju przez cały czas</li>
         </ul>
       </div>
@@ -221,12 +235,12 @@ footer p+p{margin-top:6px}
   </div>
 </section>
 
-<section id="cena" style="padding-top:0">
+<section id="cena">
   <div class="wrap">
     <h2>Cena</h2>
-    <div class="price">
-      <div class="main">
-        <span class="eyebrow" style="align-self:flex-start;background:var(--yellow);color:var(--ink)">Pakiet</span>
+    <div class="prices">
+      <div class="card price-main">
+        <h3>Skarpetkowe urodziny</h3>
         <div class="amount">750 zł</div>
         <ul>
           <li>2 godziny programu, do 12 dzieci w wieku 5–8 lat</li>
@@ -235,56 +249,54 @@ footer p+p{margin-top:6px}
           <li>dyplomy i elektroniczne zaproszenie</li>
           <li>dojazd na terenie Wrocławia</li>
         </ul>
-        <p style="font-size:16px;opacity:.9">Rezerwacja terminu po wpłacie zadatku 200 zł.</p>
+        <p class="small">Rezerwacja terminu po wpłacie zadatku 200 zł.</p>
       </div>
-      <div class="extras">
-        <div class="extra"><strong>Książka dla solenizanta</strong>„Niesamowite przygody dziesięciu skarpetek” z dedykacją od Pani Hydraulik – w cenie książki.</div>
-        <div class="extra"><strong>Więcej niż 12 dzieci?</strong>Potrzebna jest druga osoba prowadząca. Proszę napisać, przygotuję wycenę.</div>
+      <div class="card">
+        <h3>Urodziny na inny temat</h3>
+        <div class="amount dark">wycena po rozmowie</div>
+        <p>Dinozaury, kosmos, piraci albo zupełnie nietypowa pasja dziecka? Proszę napisać, co dziecko lubi. Przygotuję autorski scenariusz i wycenę.</p>
+        <p style="margin-top:14px">Więcej niż 12 dzieci? Potrzebna jest druga osoba prowadząca – to też uwzględnię w wycenie.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="about">
-  <div class="wrap">
-    <div class="about-art">
-      <svg viewBox="0 0 260 260" role="img" aria-label="Skarpetkowa pacynka Lewusia">
-        <circle cx="130" cy="130" r="122" fill="#DDEFEC" stroke="#1E2B45" stroke-width="5"/>
-        <g transform="translate(58 34) scale(2.2)"><path d="M14 14 H42 V44 L56 52 C64 57 63 72 52 74 H28 C17 74 12 67 13 57 Z" fill="#F2B33D" stroke="#1E2B45" stroke-width="2.5" stroke-linejoin="round"/><rect x="11" y="6" width="34" height="12" rx="3" fill="#C43D31" stroke="#1E2B45" stroke-width="2.5"/><circle cx="24" cy="30" r="4.2" fill="#FFFFFF" stroke="#1E2B45" stroke-width="1.6"/><circle cx="35" cy="30" r="4.2" fill="#FFFFFF" stroke="#1E2B45" stroke-width="1.6"/><circle cx="25" cy="31" r="1.8" fill="#1E2B45"/><circle cx="36" cy="31" r="1.8" fill="#1E2B45"/><path d="M24 40 Q30 45 36 40" fill="none" stroke="#1E2B45" stroke-width="2" stroke-linecap="round"/></g>
-      </svg>
-    </div>
-    <div class="about-text">
-      <h2>Kto prowadzi</h2>
-      <p class="lead">Nazywam się Darya Shut. Jestem mamą dwójki dzieci i uwielbiam literaturę dziecięcą oraz podróże po stronach książek i wyobraźni.</p>
-      <p>Na urodzinach występuję jako Pani Hydraulik – ta, która odkryła dziurę pod pralką. Pomaga mi skarpetkowa pacynka Lewusia.</p>
+<section class="tint">
+  <div class="wrap about">
+    <div class="pic"><img src="darya.jpg" alt="Darya Shut" width="240" height="240" style="display:block;width:240px;height:240px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 8px #fff,0 0 0 14px #FFC93C"></div>
+    <div class="txt">
+      <p class="kicker">Kto prowadzi</p>
+      <h2>Darya Shut</h2>
+      <p class="lead">Jestem mamą dwójki dzieci i uwielbiam literaturę dziecięcą oraz podróże po stronach książek i wyobraźni.</p>
+      <p>Na urodzinach występuję w skarpetkowym kostiumie, a pomaga mi pacynka-skarpetka. Każdy scenariusz piszę sama – z historią, w której dzieci są bohaterami.</p>
     </div>
   </div>
 </section>
 
-<section class="faq" id="pytania">
+<section id="pytania">
   <div class="wrap">
     <h2>Pytania</h2>
     <div class="faq-list">
-      <details><summary>Czy dzieci muszą znać książkę?</summary><p>Nie. Każda historia jest osobną opowieścią, więc dzieci, które słyszą ją pierwszy raz, bawią się tak samo dobrze. Te, które znają ją ze szkoły lub z filmu, często pomagają w quizie.</p></details>
       <details><summary>Gdzie odbywają się urodziny?</summary><p>U Państwa w domu albo w wynajętej przez Państwa sali we Wrocławiu. Potrzebny jest pokój od ok. 15 m² ze stołem do warsztatu. Do śledztwa wystarczą 2–3 pokoje albo większa sala.</p></details>
       <details><summary>Dla ilu dzieci jest program?</summary><p>Dla 8–12 dzieci w wieku 5–8 lat. Przy większej grupie potrzebna jest druga osoba prowadząca.</p></details>
-      <details><summary>Czy dzieci młodsze lub starsze też mogą wziąć udział?</summary><p>Tak, proszę tylko napisać o tym wcześniej. Dla młodszych upraszczam zadania, a starsze dzieci dostają trudniejsze zagadki i same piszą historię swojej skarpetki.</p></details>
+      <details><summary>Czy młodsze lub starsze dzieci też mogą wziąć udział?</summary><p>Tak, proszę tylko napisać o tym wcześniej. Dla młodszych upraszczam zadania, a starsze dzieci dostają trudniejsze zagadki.</p></details>
+      <details><summary>Czy przygotuje Pani urodziny na inny temat?</summary><p>Tak. Proszę napisać, co dziecko lubi najbardziej. Przygotuję autorski scenariusz wokół tego tematu i wycenę.</p></details>
       <details><summary>A co z jedzeniem i tortem?</summary><p>Poczęstunek i tort przygotowują Państwo. W programie jest na nie 20-minutowa przerwa.</p></details>
       <details><summary>Czy robi Pani zdjęcia?</summary><p>Zdjęcia robią Państwo. Ja mogę zrobić kilka zdjęć prac i rąk do swojego portfolio, ale tylko za Państwa zgodą i bez twarzy dzieci.</p></details>
-      <details><summary>Jak zarezerwować termin?</summary><p>Proszę zadzwonić pod numer 571 513 275 albo wypełnić formularz w sekcji Kontakt – z datą, godziną i przybliżoną liczbą dzieci. Termin rezerwuję po wpłacie zadatku. Najlepiej odezwać się 2–3 tygodnie wcześniej.</p></details>
+      <details><summary>Jak zarezerwować termin?</summary><p>Proszę zadzwonić pod numer 571 513 275 albo wypełnić formularz w sekcji Kontakt – z datą, godziną i przybliżoną liczbą dzieci. Termin rezerwuję po wpłacie zadatku 200 zł. Najlepiej odezwać się 2–3 tygodnie wcześniej.</p></details>
     </div>
   </div>
 </section>
 
-<section class="contact" id="kontakt">
+<section class="contact tint" id="kontakt">
   <div class="wrap">
-    <span class="eyebrow">Wolne terminy w weekendy</span>
-    <h2>Zaplanujmy skarpetkowe urodziny</h2>
+    <p class="kicker">Kontakt</p>
+    <h2>Zaplanujmy urodziny</h2>
     <p class="lead">Proszę zadzwonić albo wypełnić krótki formularz z datą, miejscem i liczbą dzieci. Odpowiem najszybciej, jak to możliwe.</p>
     <div class="actions">
       <a class="btn" href="tel:+48571513275">Zadzwoń: 571 513 275</a>
-      <a class="btn ghost" href="https://forms.gle/WLQChhXSyYJxqCZu7" target="_blank" rel="noopener">Wypełnij formularz</a>
-      <a class="btn ghost" href="https://www.facebook.com/profile.php?id=61595788875088" target="_blank" rel="noopener">Facebook</a>
+      <a class="btn soft" href="https://forms.gle/WLQChhXSyYJxqCZu7" target="_blank" rel="noopener">Wypełnij formularz</a>
+      <a class="btn soft" href="https://www.facebook.com/profile.php?id=61595788875088" target="_blank" rel="noopener">Facebook</a>
     </div>
     <p class="consent">Wypełniając formularz, wyrażają Państwo zgodę na przetwarzanie podanych danych przez Daryę Shut w celu przygotowania oferty i organizacji urodzin. Dane nie są przekazywane innym osobom i na prośbę zostaną usunięte.</p>
   </div>
@@ -293,8 +305,7 @@ footer p+p{margin-top:6px}
 
 <footer>
   <div class="wrap">
-    <p>Skarpetkowe urodziny · Darya Shut · Wrocław · <a href="tel:+48571513275">571 513 275</a></p>
-    <p>Program powstał na podstawie książki Justyny Bednarek „Niesamowite przygody dziesięciu skarpetek (czterech prawych i sześciu lewych)”, Wydawnictwo Poradnia K. Nie jest oficjalnym projektem autorki ani wydawnictwa.</p>
+    <p>Darya Shut · autorskie urodziny dla dzieci · Wrocław · <a href="tel:+48571513275">571 513 275</a></p>
   </div>
 </footer>
 
