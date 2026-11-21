@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Autorskie urodziny dla dzieci we Wrocławiu – Darya Shut</title>
-<meta name="description" content="Autorskie urodziny dla dzieci 5–8 lat wokół ulubionego tematu dziecka: własna historia, gry, warsztat i zagadki. Gotowy scenariusz: Skarpetkowe urodziny. Wrocław.">
+<meta name="description" content="Autorskie urodziny dla dzieci 5–8 lat wokół ulubionego tematu dziecka: własna historia, gry, warsztat i zagadki. Przykłady scenariuszy: Skarpetkowe urodziny i Wydanie Specjalne. Wrocław.">
 <meta property="og:title" content="Autorskie urodziny dla dzieci – Darya Shut, Wrocław">
-<meta property="og:description" content="Urodziny wokół ulubionego tematu dziecka. Pierwszy gotowy scenariusz: Skarpetkowe urodziny – śledztwo, warsztat i parada skarpetek.">
+<meta property="og:description" content="Urodziny wokół ulubionego tematu dziecka. Przykłady scenariuszy: Skarpetkowe urodziny – detektywistyczna przygoda, i Wydanie Specjalne – urodziny w redakcji magazynu mody.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://adarka-shut.github.io/autorskie-urodziny/">
 <meta property="og:image" content="https://adarka-shut.github.io/autorskie-urodziny/preview.png">
@@ -79,7 +79,16 @@ nav a:hover{color:var(--violet)}
 .scene-art svg{display:block;width:100%;height:100%}
 .scene figcaption{padding:20px 22px 24px;display:flex;flex-direction:column;gap:6px}
 .scene p{font-size:16px;color:var(--muted)}
-.note{margin-top:18px;font-size:14px;color:var(--muted)}
+/* scenarios */
+.pick{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:32px}
+.pick a{display:flex;gap:16px;align-items:center;padding:18px 20px;border-radius:20px;background:var(--tint);color:var(--ink);text-decoration:none}
+.pick a:hover{box-shadow:inset 0 0 0 2px var(--violet);color:var(--ink)}
+.pick .ico{flex:0 0 56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center}
+.pick b{font-family:'Fredoka',sans-serif;font-weight:600;font-size:22px;display:block;line-height:1.15}
+.pick span{font-size:16px;color:var(--muted);display:block;line-height:1.35}
+.scenario{margin-top:56px;scroll-margin-top:20px}
+.scenario + .scenario{padding-top:56px;border-top:2px dashed #D9DCF5}
+.cols li b{font-weight:700}
 /* how */
 .how{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:40px;list-style:none;padding:0}
 .how li{display:flex;flex-direction:column;gap:10px}
@@ -107,6 +116,7 @@ nav a:hover{color:var(--violet)}
 .price-main .amount{font-family:'Fredoka',sans-serif;font-weight:700;font-size:60px;line-height:1;margin:10px 0 14px}
 .price-main ul{margin:0;padding-left:20px}
 .price-main .small{margin-top:16px;font-size:16px;opacity:.92}
+.price-ink{background:var(--ink)}
 .amount.dark{font-family:'Fredoka',sans-serif;font-weight:700;font-size:34px;line-height:1.1;margin:10px 0 14px;color:var(--violet)}
 
 /* about */
@@ -148,7 +158,7 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
     <nav aria-label="Menu">
       <ul>
         <li><a href="#jak">Jak to wygląda</a></li>
-        <li><a href="#przyklad">Przykład</a></li>
+        <li><a href="#przyklad">Scenariusze</a></li>
         <li><a href="#cena">Cena</a></li>
         <li><a href="#pytania">Pytania</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
@@ -169,13 +179,13 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
     </div>
     <h1>Urodziny wokół <em>ulubionego tematu</em> dziecka</h1>
     <p class="lead">Dinozaury, kosmos, księżniczki, piraci, budowanie z klocków – wybieramy to, czym żyje dziecko, i wokół tego budujemy całe urodziny: własną historię, gry, zagadki i warsztat.</p>
-    <p class="lead small-lead">Przykład? Detektywistyczny scenariusz o zaginionej skarpetce – <a href="#przyklad">zobacz niżej</a>. Inny temat? <a href="#kontakt">Proszę napisać</a>, wymyślimy go razem.</p>
+    <p class="lead small-lead">Przykłady? Detektywistyczne Skarpetkowe urodziny i Wydanie Specjalne – urodziny w redakcji magazynu mody. <a href="#przyklad">Zobacz niżej</a>. Inny temat? <a href="#kontakt">Proszę napisać</a>, wymyślimy go razem.</p>
     <ul class="facts" aria-label="W skrócie">
-      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M12 9v7M8 12l4-1 4 1M9 21l3-5 3 5"/></svg>dzieci 5–8 lat</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-3.5 2.7-6 6-6s6 2.5 6 6M14.5 14.5c3.5-.6 7.5 1.4 7.5 5.5"/></svg>do 12 osób</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>2 godziny</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>dojazd we Wrocławiu</li><li class="price-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>pakiet 750 zł</li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M12 9v7M8 12l4-1 4 1M9 21l3-5 3 5"/></svg>dzieci 5–8 lat</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-3.5 2.7-6 6-6s6 2.5 6 6M14.5 14.5c3.5-.6 7.5 1.4 7.5 5.5"/></svg>do 12 osób</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>2 godziny</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>dojazd we Wrocławiu</li><li class="price-chip"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>pakiet od 750 zł</li>
     </ul>
     <div class="actions">
       <a class="btn" href="#kontakt">Zapytaj o termin</a>
-      <a class="btn soft" href="#przyklad">Zobacz przykład</a>
+      <a class="btn soft" href="#przyklad">Zobacz scenariusze</a>
     </div>
   </div>
 </section>
@@ -202,7 +212,6 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
 <g transform="translate(70 60) rotate(-6)"><path d="M-22 6 H22 V70 L44 84 C58 93 54 120 34 122 H-4 C-22 122 -30 110 -28 92 Z" fill="#5B4BD6"/><rect x="-24" y="0" width="48" height="16" rx="5" fill="#FFC93C"/><circle cx="-8" cy="38" r="6" fill="#fff"/><circle cx="8" cy="38" r="6" fill="#fff"/><circle cx="-7" cy="39" r="2.8" fill="#1F1D36"/><circle cx="9" cy="39" r="2.8" fill="#1F1D36"/><path d="M-6 52 Q0 57 6 52" fill="none" stroke="#1F1D36" stroke-width="3" stroke-linecap="round"/></g><g transform="translate(160 60) rotate(4)"><path d="M-22 6 H22 V70 L44 84 C58 93 54 120 34 122 H-4 C-22 122 -30 110 -28 92 Z" fill="#2BB59A"/><rect x="-24" y="0" width="48" height="16" rx="5" fill="#fff"/><circle cx="-8" cy="38" r="6" fill="#fff"/><circle cx="8" cy="38" r="6" fill="#fff"/><circle cx="-7" cy="39" r="2.8" fill="#1F1D36"/><circle cx="9" cy="39" r="2.8" fill="#1F1D36"/><path d="M-6 52 Q0 57 6 52" fill="none" stroke="#1F1D36" stroke-width="3" stroke-linecap="round"/></g><g transform="translate(250 60) rotate(-4)"><path d="M-22 6 H22 V70 L44 84 C58 93 54 120 34 122 H-4 C-22 122 -30 110 -28 92 Z" fill="#FF7A45"/><rect x="-24" y="0" width="48" height="16" rx="5" fill="#5B4BD6"/><circle cx="-8" cy="38" r="6" fill="#fff"/><circle cx="8" cy="38" r="6" fill="#fff"/><circle cx="-7" cy="39" r="2.8" fill="#1F1D36"/><circle cx="9" cy="39" r="2.8" fill="#1F1D36"/><path d="M-6 52 Q0 57 6 52" fill="none" stroke="#1F1D36" stroke-width="3" stroke-linecap="round"/></g><g transform="translate(335 60) rotate(6)"><path d="M-22 6 H22 V70 L44 84 C58 93 54 120 34 122 H-4 C-22 122 -30 110 -28 92 Z" fill="#FFC93C"/><rect x="-24" y="0" width="48" height="16" rx="5" fill="#FF8FB1"/><circle cx="-8" cy="38" r="6" fill="#fff"/><circle cx="8" cy="38" r="6" fill="#fff"/><circle cx="-7" cy="39" r="2.8" fill="#1F1D36"/><circle cx="9" cy="39" r="2.8" fill="#1F1D36"/><path d="M-6 52 Q0 57 6 52" fill="none" stroke="#1F1D36" stroke-width="3" stroke-linecap="round"/></g>
 <circle cx="40" cy="30" r="5" fill="#FF7A45"/><circle cx="210" cy="24" r="6" fill="#5B4BD6"/><circle cx="370" cy="36" r="5" fill="#2BB59A"/><rect x="120" y="22" width="10" height="10" rx="2" fill="#FFC93C" transform="rotate(20 125 27)"/><rect x="290" y="18" width="10" height="10" rx="2" fill="#FF8FB1" transform="rotate(-20 295 23)"/></svg></div><figcaption><h3>Finał dla rodziców</h3><p>Parada prac, wspólne zdjęcie i dyplomy dla wszystkich. Rodzice dołączają na ostatnie minuty.</p></figcaption></figure>
     </div>
-    <p class="note">Ilustracje poglądowe. Zdjęcia z prawdziwych urodzin dodam po pierwszych imprezach.</p>
   </div>
 </section>
 
@@ -220,6 +229,15 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
 
 <section id="przyklad">
   <div class="wrap">
+    <p class="kicker">Przykłady scenariuszy</p>
+    <h2 style="margin-top:8px">Tak mogą wyglądać urodziny</h2>
+    <p class="lead" style="margin-top:16px">Dwa przykładowe scenariusze. Każdy dopasowuję do dziecka i gości – a jeśli dziecko kocha coś innego, wymyślamy nowy temat.</p>
+    <div class="pick">
+      <a href="#skarpetki"><span class="ico" style="background:#FFE6EE"><svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><path d="M12 4 H26 V22 L33 27 C37 30 35 37 29 37 H17 C12 37 10 34 10 29 Z" fill="#FF8FB1"/><rect x="11" y="2" width="16" height="6" rx="2" fill="#5B4BD6"/></svg></span><span><b>Skarpetkowe urodziny</b><span>detektywistyczna przygoda i własny skarpetkowy przyjaciel</span></span></a>
+      <a href="#wydanie"><span class="ico" style="background:#FFF3D6"><svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><path d="M14.5 4 H17 L18 9 H22 L23 4 H25.5 L26.5 12 C26.5 14 25.5 15.5 24 16.5 L33 33 Q20 38 7 33 L16 16.5 C14.5 15.5 13.5 14 13.5 12 Z" fill="#FF7A45"/><rect x="15" y="15" width="10" height="3.4" rx="1.7" fill="#5B4BD6"/><path d="M17 22 L14 33 M23 22 L26 33 M20 22 V35" stroke="#FFD9C7" stroke-width="1.8" stroke-linecap="round"/><path d="M32 3 L33.3 6.7 L37 8 L33.3 9.3 L32 13 L30.7 9.3 L27 8 L30.7 6.7 Z" fill="#FF8FB1"/></svg></span><span><b>Wydanie Specjalne</b><span>fryzury, moda z gazet, wybieg i własna gazeta</span></span></a>
+    </div>
+
+    <div class="scenario" id="skarpetki">
     <div class="scenario-head">
       <div class="txt">
         <span class="badge">Przykład scenariusza</span>
@@ -242,6 +260,61 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
       <li><span class="time">1:15–1:40</span><div><h3>Poszukiwanie zaginionej skarpetki</h3><p>Drużyny detektywów idą po śladach, rozwiązują zagadki, a na końcu znajdują prezent dla solenizanta.</p></div></li>
       <li><span class="time">1:40–2:00</span><div><h3>Parada skarpetek</h3><p>Dzieci pokazują rodzicom swoje skarpetki, a potem jest wspólne zdjęcie i dyplomy dla wszystkich.</p></div></li>
     </ol>
+    </div>
+
+    <div class="scenario" id="wydanie">
+    <div class="scenario-head">
+      <div class="txt">
+        <span class="badge">Przykład scenariusza</span>
+        <h2>Wydanie Specjalne</h2>
+        <p class="lead">Urodziny w redakcji magazynu mody dla 5–8-latków. Goście zostają stylistami, projektantami, reporterami i modelami: robią kolorowe fryzury, szyją kolekcję z gazet i wychodzą na wybieg. Na koniec solenizant dostaje gazetę o własnych urodzinach.</p>
+      </div>
+      <div class="pic">
+        <svg viewBox="0 0 320 300" role="img" aria-label="Okładka magazynu ze zdjęciem dziecka z kolorowymi warkoczykami i zdjęcie z aparatu natychmiastowego">
+          <circle cx="160" cy="150" r="140" fill="#F1F3FF"/>
+          <g transform="translate(62 42) rotate(-5)">
+            <rect x="0" y="0" width="176" height="226" rx="12" fill="#fff"/>
+            <path d="M0 12 A12 12 0 0 1 12 0 H164 A12 12 0 0 1 176 12 V46 H0 Z" fill="#1F1D36"/>
+            <text x="88" y="22" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="700" font-size="17" letter-spacing="1.5" fill="#fff">WYDANIE</text>
+            <text x="88" y="39" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="600" font-size="13" letter-spacing="2.5" fill="#FF7A45">SPECJALNE</text>
+            <rect x="14" y="58" width="148" height="118" rx="8" fill="#FFE6EE"/>
+            <path d="M48 176 C48 146 128 146 128 176 Z" fill="#fff"/>
+            <path d="M58 160 L72 176 M78 154 L88 176 M98 154 L104 176 M118 160 L110 176" stroke="#D9DCF5" stroke-width="4" stroke-linecap="round"/>
+            <path d="M62 104 C56 124 52 140 50 156" fill="none" stroke="#FF8FB1" stroke-width="9" stroke-linecap="round"/>
+            <path d="M66 108 C62 126 60 140 60 152" fill="none" stroke="#FFC93C" stroke-width="5" stroke-linecap="round"/>
+            <path d="M114 104 C120 124 124 140 126 156" fill="none" stroke="#2BB59A" stroke-width="9" stroke-linecap="round"/>
+            <path d="M110 108 C114 126 116 140 116 152" fill="none" stroke="#5B4BD6" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="50" cy="160" r="5" fill="#5B4BD6"/><circle cx="126" cy="160" r="5" fill="#FF7A45"/><circle cx="60" cy="156" r="3.5" fill="#FF7A45"/><circle cx="116" cy="156" r="3.5" fill="#FFC93C"/>
+            <circle cx="88" cy="112" r="27" fill="#F4C7A6"/>
+            <path d="M60 108 C58 80 118 80 116 108 C104 96 72 96 60 108 Z" fill="#7A4A2A"/>
+            <circle cx="79" cy="114" r="3" fill="#1F1D36"/><circle cx="97" cy="114" r="3" fill="#1F1D36"/>
+            <path d="M80 126 Q88 132 96 126" fill="none" stroke="#1F1D36" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M88 76 L91 82 L97 83 L92.5 87 L94 93 L88 90 L82 93 L83.5 87 L79 83 L85 82 Z" fill="#FFC93C"/>
+            <rect x="14" y="188" width="112" height="9" rx="4.5" fill="#1F1D36"/>
+            <rect x="14" y="205" width="78" height="7" rx="3.5" fill="#D9DCF5"/>
+            <circle cx="152" cy="200" r="10" fill="#FF7A45"/>
+          </g>
+          <g transform="translate(206 160) rotate(9)">
+            <rect x="4" y="5" width="84" height="100" rx="6" fill="#D9DCF5"/>
+            <rect x="0" y="0" width="84" height="100" rx="6" fill="#fff"/>
+            <rect x="8" y="8" width="68" height="64" rx="3" fill="#FFC93C"/>
+            <path d="M42 22 L46 31 L56 32 L48.5 38.5 L51 48 L42 43 L33 48 L35.5 38.5 L28 32 L38 31 Z" fill="#fff"/>
+            <path d="M18 64 L32 52 L44 60 L58 48 L70 64 Z" fill="#FF7A45" opacity=".85"/>
+          </g>
+          <circle cx="46" cy="230" r="8" fill="#FF8FB1"/><circle cx="66" cy="252" r="6" fill="#2BB59A"/><circle cx="274" cy="74" r="7" fill="#5B4BD6"/><circle cx="256" cy="52" r="5" fill="#FF7A45"/>
+        </svg>
+      </div>
+    </div>
+
+    <ol class="timeline">
+      <li><span class="time">0:00–0:15</span><div><h3>Biuro redakcji</h3><p>Legitymacje prasowe i wybór ról: model, stylista, projektant albo reporter.</p></div></li>
+      <li><span class="time">0:15–0:25</span><div><h3>Kolegium redakcyjne</h3><p>Wywiad z solenizantem i quiz „Prawda czy plotka?”.</p></div></li>
+      <li><span class="time">0:25–1:05</span><div><h3>Pracownie</h3><p>Salon fryzur, pracownia mody z gazet i redakcja. Grupy zmieniają się co 20 minut.</p></div></li>
+      <li><span class="time">1:05–1:25</span><div><h3>Przerwa na tort</h3><p>Czas na poczęstunek i świeczki. W tym czasie przygotowuję wybieg.</p></div></li>
+      <li><span class="time">1:25–1:45</span><div><h3>Wielki Pokaz</h3><p>Modele wychodzą na wybieg, a reporterzy robią zdjęcia do okładek.</p></div></li>
+      <li><span class="time">1:45–2:00</span><div><h3>Premiera gazety</h3><p>Reporterzy pokazują gazetę, a wszyscy dostają certyfikaty redakcji.</p></div></li>
+    </ol>
+    </div>
   </div>
 </section>
 
@@ -253,19 +326,20 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
         <h3>Ja przywożę</h3>
         <ul>
           <li>scenariusz i prowadzenie przez 2 godziny</li>
-          <li>kostium, pacynkę i rekwizyty</li>
+          <li>kostium i rekwizyty</li>
           <li>materiały do warsztatu dla każdego gościa</li>
-          <li>ślady i zagadki do śledztwa, dyplomy</li>
+          <li>zagadki, wszystkie wydruki i dyplomy lub certyfikaty</li>
           <li>dojazd na 30–45 minut przed startem i sprzątanie po swoim stanowisku</li>
         </ul>
       </div>
       <div class="card">
         <h3>Państwo zapewniają</h3>
         <ul>
-          <li>miejsce: pokój od ok. 15 m² ze stołem, a do śledztwa 2–3 pokoje lub większa sala</li>
+          <li>miejsce: pokój od ok. 15 m² ze stołem</li>
           <li>poczęstunek, napoje i tort</li>
           <li>zaproszenie gości (gotowy tekst zaproszenia dostaną Państwo ode mnie)</li>
-          <li>prezent do ukrycia w śledztwie</li>
+          <li><b>Skarpetkowe urodziny:</b> 2–3 pokoje lub większą salę do śledztwa i prezent do ukrycia</li>
+          <li><b>Wydanie Specjalne:</b> miejsce na wybieg i 1–2 osoby dorosłe do pomocy w salonie fryzur</li>
           <li>jedną osobę dorosłą w pokoju przez cały czas</li>
         </ul>
       </div>
@@ -289,6 +363,18 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
         </ul>
         <p class="small">Rezerwacja terminu po wpłacie zadatku 200 zł.</p>
       </div>
+      <div class="card price-main price-ink">
+        <h3>Wydanie Specjalne</h3>
+        <div class="amount">850 zł</div>
+        <ul>
+          <li>2 godziny programu, do 12 dzieci w wieku 5–8 lat</li>
+          <li>materiały do fryzur i strojów z gazet</li>
+          <li>zdjęcia z aparatu natychmiastowego</li>
+          <li>gazeta o solenizancie, legitymacje i certyfikaty</li>
+          <li>dojazd na terenie Wrocławia</li>
+        </ul>
+        <p class="small">Rezerwacja terminu po wpłacie zadatku 200 zł.</p>
+      </div>
       <div class="card">
         <h3>Urodziny na inny temat</h3>
         <div class="amount dark">wycena po rozmowie</div>
@@ -306,7 +392,7 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
       <p class="kicker">Kto prowadzi</p>
       <h2>Darya Shut</h2>
       <p class="lead">Jestem mamą dwójki dzieci i uwielbiam literaturę dziecięcą oraz podróże po stronach książek i wyobraźni.</p>
-      <p>Na urodzinach występuję w kostiumie dopasowanym do tematu, a pomaga mi pacynka. Każdy scenariusz piszę sama – z historią, w której dzieci są bohaterami.</p>
+      <p>Na urodzinach występuję w kostiumie dopasowanym do tematu – raz z pacynką-skarpetką, raz jako redaktor naczelna. Każdy scenariusz piszę sama – z historią, w której dzieci są bohaterami.</p>
     </div>
   </div>
 </section>
@@ -315,12 +401,14 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
   <div class="wrap">
     <h2>Pytania</h2>
     <div class="faq-list">
-      <details><summary>Gdzie odbywają się urodziny?</summary><p>U Państwa w domu albo w wynajętej przez Państwa sali we Wrocławiu. Potrzebny jest pokój od ok. 15 m² ze stołem do warsztatu. Do śledztwa wystarczą 2–3 pokoje albo większa sala.</p></details>
+      <details><summary>Gdzie odbywają się urodziny?</summary><p>U Państwa w domu albo w wynajętej przez Państwa sali we Wrocławiu. Potrzebny jest pokój od ok. 15 m² ze stołem do warsztatu. Do śledztwa w Skarpetkowych urodzinach wystarczą 2–3 pokoje albo większa sala. Wydanie Specjalne można zorganizować też w kawiarni – nic nie przyklejam do podłogi.</p></details>
       <details><summary>Dla ilu dzieci jest program?</summary><p>Dla 8–12 dzieci w wieku 5–8 lat. Przy większej grupie potrzebna jest druga osoba prowadząca.</p></details>
       <details><summary>Czy młodsze lub starsze dzieci też mogą wziąć udział?</summary><p>Tak, proszę tylko napisać o tym wcześniej. Dla młodszych upraszczam zadania, a starsze dzieci dostają trudniejsze zagadki.</p></details>
+      <details><summary>Czy Wydanie Specjalne pasuje też chłopcom?</summary><p>Tak. Dzieci same wybierają role: modelka lub model, stylistka lub stylista, projektantka lub projektant, reporterka lub reporter. Reporterzy robią zdjęcia i wywiady i składają gazetę, a na wybieg nikt nie musi wychodzić.</p></details>
+      <details><summary>Czy na Wydaniu Specjalnym jest makijaż?</summary><p>Nie. Nie używam kosmetyków, lakieru do paznokci ani brokatu na twarz. Są tylko warkoczyki z kolorowym kanekalonem, koraliki i samoprzylepne kryształki.</p></details>
       <details><summary>Czy przygotuje Pani urodziny na inny temat?</summary><p>Tak. Proszę napisać, co dziecko lubi najbardziej. Przygotuję autorski scenariusz wokół tego tematu i wycenę.</p></details>
       <details><summary>A co z jedzeniem i tortem?</summary><p>Poczęstunek i tort przygotowują Państwo. W programie jest na nie 20-minutowa przerwa.</p></details>
-      <details><summary>Czy robi Pani zdjęcia?</summary><p>Zdjęcia robią Państwo. Ja mogę zrobić kilka zdjęć prac i rąk do swojego portfolio, ale tylko za Państwa zgodą i bez twarzy dzieci.</p></details>
+      <details><summary>Czy robi Pani zdjęcia?</summary><p>Zdjęcia robią Państwo. W Wydaniu Specjalnym dzieci robią zdjęcia aparatem natychmiastowym – odbitki trafiają na ich mini okładki i do gazety solenizanta. Ja mogę zrobić kilka zdjęć prac i rąk do swojego portfolio, ale tylko za Państwa zgodą i bez twarzy dzieci.</p></details>
       <details><summary>Jak zarezerwować termin?</summary><p>Proszę zadzwonić pod numer 571 513 275 albo wypełnić formularz w sekcji Kontakt – z datą, godziną i przybliżoną liczbą dzieci. Termin rezerwuję po wpłacie zadatku 200 zł. Najlepiej odezwać się 2–3 tygodnie wcześniej.</p></details>
     </div>
   </div>
