@@ -17,9 +17,9 @@
 <meta name="twitter:image" content="https://adarka-shut.github.io/autorskie-urodziny/preview.png">
 <meta property="og:locale" content="pl_PL">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Figtree:wght@400;600;700&display=swap">
+<link rel="preload" href="fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/fredoka-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
 :root{
   --ink:#1F1D36; --muted:#555372; --bg:#FFFFFF; --tint:#F1F3FF;
@@ -117,6 +117,7 @@ nav a:hover{color:var(--violet)}
 .price-main ul{margin:0;padding-left:20px}
 .price-main .small{margin-top:16px;font-size:16px;opacity:.92}
 .price-ink{background:var(--ink)}
+.price-note{margin-top:22px;font-size:16px;color:var(--muted);max-width:820px}
 .amount.dark{font-family:'Fredoka',sans-serif;font-weight:700;font-size:34px;line-height:1.1;margin:10px 0 14px;color:var(--violet)}
 
 /* about */
@@ -138,6 +139,7 @@ details p{padding:0 22px 20px;font-size:17px;color:var(--muted)}
 .contact .wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
 .contact .actions{justify-content:center}
 .consent{max-width:640px;font-size:14px;color:var(--muted)}
+footer .legal{margin-top:6px;font-size:14px}
 footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;border-top:1px solid #ECEEFA}
 @media (max-width:640px){
   body{font-size:17px}
@@ -387,9 +389,9 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
         <h3>Urodziny na inny temat</h3>
         <div class="amount dark">wycena po rozmowie</div>
         <p>Dziecko ma swoją pasję, ulubioną książkę albo słowo, które powtarza od miesięcy? Proszę o tym napisać – przygotuję autorski scenariusz i wycenę.</p>
-        <p style="margin-top:14px">Więcej niż 12 dzieci? Potrzebna jest druga osoba prowadząca – to też uwzględnię w wycenie.</p>
       </div>
     </div>
+    <p class="price-note">Ceny brutto (zawierają VAT). Dopłaty: każde dziecko powyżej 12 – 50 zł (maksymalnie 20 dzieci) · każde dodatkowe 30 minut – 100 zł · dojazd poza Wrocław do 30 km – 100 zł. Zasady rezerwacji, płatności i zmiany terminu opisuje <a href="regulamin.html">Regulamin</a>.</p>
   </div>
 </section>
 
@@ -410,14 +412,15 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
     <h2>Pytania</h2>
     <div class="faq-list">
       <details><summary>Gdzie odbywają się urodziny?</summary><p>U Państwa w domu albo w wynajętej przez Państwa sali we Wrocławiu. Potrzebny jest pokój od ok. 15 m² ze stołem do warsztatu. Do śledztwa w Skarpetkowych urodzinach wystarczą 2–3 pokoje albo większa sala. Wydanie Specjalne można zorganizować też w kawiarni – nic nie przyklejam do podłogi.</p></details>
-      <details><summary>Dla ilu dzieci jest program?</summary><p>Dla 8–12 dzieci w wieku 5–8 lat. Przy większej grupie potrzebna jest druga osoba prowadząca.</p></details>
+      <details><summary>Dla ilu dzieci jest program?</summary><p>Pakiet obejmuje do 12 dzieci w wieku 5–8 lat. Każde kolejne dziecko to dopłata 50 zł. Prowadzę urodziny dla maksymalnie 20 dzieci.</p></details>
       <details><summary>Czy młodsze lub starsze dzieci też mogą wziąć udział?</summary><p>Tak, proszę tylko napisać o tym wcześniej. Dla młodszych upraszczam zadania, a starsze dzieci dostają trudniejsze zagadki.</p></details>
       <details><summary>Czy Wydanie Specjalne pasuje też chłopcom?</summary><p>Tak. Dzieci same wybierają role: modelka lub model, stylistka lub stylista, projektantka lub projektant, reporterka lub reporter. Reporterzy robią zdjęcia i wywiady i składają gazetę, a na wybieg nikt nie musi wychodzić.</p></details>
       <details><summary>Czy na Wydaniu Specjalnym jest makijaż?</summary><p>Nie. Nie używam kosmetyków, lakieru do paznokci ani brokatu na twarz. Są tylko warkoczyki z kolorowym kanekalonem, koraliki i samoprzylepne kryształki.</p></details>
       <details><summary>Czy przygotuje Pani urodziny na inny temat?</summary><p>Tak. Proszę napisać, co dziecko lubi najbardziej. Przygotuję autorski scenariusz wokół tego tematu i wycenę.</p></details>
+      <details><summary>Czy można przełożyć termin?</summary><p>Tak. Jeśli pojawi się taka potrzeba, ustalimy razem nową datę, a zadatek przechodzi na nowy termin. Przy odwołaniu urodzin zadatek nie wraca. Szczegóły są w <a href="regulamin.html">Regulaminie</a>.</p></details>
       <details><summary>A co z jedzeniem i tortem?</summary><p>Poczęstunek i tort przygotowują Państwo. W programie jest na nie 20-minutowa przerwa.</p></details>
       <details><summary>Czy robi Pani zdjęcia?</summary><p>Zdjęcia robią Państwo. W Wydaniu Specjalnym dzieci robią zdjęcia aparatem natychmiastowym – odbitki trafiają na ich mini okładki i do gazety solenizanta. Ja mogę zrobić kilka zdjęć prac i rąk do swojego portfolio, ale tylko za Państwa zgodą i bez twarzy dzieci.</p></details>
-      <details><summary>Jak zarezerwować termin?</summary><p>Proszę zadzwonić pod numer 571 513 275 albo wypełnić formularz w sekcji Kontakt – z datą, godziną i przybliżoną liczbą dzieci. Termin rezerwuję po wpłacie zadatku 200 zł. Najlepiej odezwać się 2–3 tygodnie wcześniej.</p></details>
+      <details><summary>Jak zarezerwować termin?</summary><p>Proszę zadzwonić pod numer 571 513 275 albo wypełnić formularz w sekcji Kontakt – z datą, godziną i przybliżoną liczbą dzieci. Termin rezerwuję po wpłacie zadatku 200 zł i potwierdzam rezerwację e-mailem. Resztę kwoty płacą Państwo przelewem na podstawie faktury w ciągu 7 dni. Najlepiej odezwać się 2–3 tygodnie wcześniej.</p></details>
     </div>
   </div>
 </section>
@@ -426,20 +429,22 @@ footer{padding:28px 0 44px;text-align:center;color:var(--muted);font-size:15px;b
   <div class="wrap">
     <p class="kicker">Kontakt</p>
     <h2>Zaplanujmy urodziny</h2>
-    <p class="lead">Proszę zadzwonić albo wypełnić krótki formularz z datą, miejscem i liczbą dzieci. Odpowiem najszybciej, jak to możliwe.</p>
+    <p class="lead">Proszę zadzwonić, napisać na <a href="mailto:autorskieurodzinywroclaw@gmail.com">autorskieurodzinywroclaw@gmail.com</a> albo wypełnić krótki formularz z datą, miejscem i liczbą dzieci. Odpowiem najszybciej, jak to możliwe.</p>
     <div class="actions">
       <a class="btn" href="tel:+48571513275">Zadzwoń: 571 513 275</a>
       <a class="btn soft" href="https://forms.gle/WLQChhXSyYJxqCZu7" target="_blank" rel="noopener">Wypełnij formularz</a>
+      <a class="btn soft" href="mailto:autorskieurodzinywroclaw@gmail.com">E-mail</a>
       <a class="btn soft" href="https://www.facebook.com/autorskieurodzinywroclaw/" target="_blank" rel="noopener">Facebook</a>
     </div>
-    <p class="consent">Wypełniając formularz, wyrażają Państwo zgodę na przetwarzanie podanych danych przez Daryę Shut w celu przygotowania oferty i organizacji urodzin. Dane nie są przekazywane innym osobom i na prośbę zostaną usunięte.</p>
+    <p class="consent">Administratorem danych podanych w formularzu, mailu lub telefonicznie jest Darya Shut. Dane służą do przygotowania oferty i organizacji urodzin. Szczegóły i Państwa prawa: <a href="polityka-prywatnosci.html">Polityka prywatności</a>.</p>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <p>Darya Shut · autorskie urodziny dla dzieci · Wrocław · <a href="tel:+48571513275">571 513 275</a></p>
+    <p>Darya Shut · autorskie urodziny dla dzieci · Wrocław · <a href="tel:+48571513275">571 513 275</a> · <a href="mailto:autorskieurodzinywroclaw@gmail.com">autorskieurodzinywroclaw@gmail.com</a></p>
+    <p class="legal">Darya Shut, ul. Zakładowa 11j/18, Wrocław · NIP 8952289029 · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="regulamin.html">Regulamin</a></p>
   </div>
 </footer>
 
